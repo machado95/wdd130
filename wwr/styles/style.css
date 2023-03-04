@@ -9,6 +9,11 @@ body a {
     margin: 0 auto;
 }
 
+#content-faq {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 #logo_link {
     padding-top: 5px;
     justify-self: center;
@@ -127,6 +132,16 @@ footer {
     align-items: center;
 }
 
+.faq-footer {
+    background-color: #446c7c;
+    color: black;
+    padding: 25px 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .home-title {
     color: black;
     font-family: "Bebas Neue", Arial, sans-serif;
@@ -192,6 +207,25 @@ footer .social img {
     padding-top: 15px;
 }
 
+.faq-card {
+    border: 10px solid black;
+}
+
+.right {
+    margin-left: 15px;
+}
+
+.left {
+    margin-right: 15px;
+}
+
+.kids-card, .safety-card, .faq-camping-card, .bag-card {
+    margin: 50px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
@@ -234,6 +268,13 @@ main section img {
 
 .card-img, .mountains {
     width: 100%;
+}
+
+#h1-faq {
+    background-color: #846242;
+    text-align: center;
+    margin: 0;
+    padding: 50px 50px;
 }
 
 /* --------------- Media query ------------------- */
