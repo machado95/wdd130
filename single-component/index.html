@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 70%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #dc34a9d5;
+}
+
+.container:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.grid_of_pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.one {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.two {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.three {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.four {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.five {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.six {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.seven {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.eight {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.nine {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.title {
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.title p {
+    font-size: 1.5em;
+}
+
+</style>
+</head>
+<body>
+    <div class="title">
+        <h2>The Machados</h2>
+        <p>Hover over the images to know the story of the Machado family</p>
+    </div>
+
+    <div class="grid_of_pictures">
+        <div class="one">
+            <div class="container">
+                <img src="/images/me.jpg" alt="A picture of me" class="image">
+                <div class="overlay">
+                    <div class="text">Hi, my name is Carlos Machado. I'm gonna tell you my story.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="two">
+            <div class="container">
+                <img src="/images/me_at_church.jpg" alt="At church" class="image">
+                <div class="overlay">
+                    <div class="text">I'm a member of the Church of Jesus Christ of Latter-Day Saints and I love it!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="three">
+            <div class="container">
+                <img src="/images/me_with_family.jpg" alt="My family" class="image">
+                <div class="overlay">
+                    <div class="text">This is my first family. From left to right we have: Me, Giovani, Cinara, Beto, Talita and Carolina.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="four">
+            <div class="container">
+                <img src="/images/me_with_friends.jpg" alt="Me and my friends" class="image">
+                <div class="overlay">
+                    <div class="text">These are some of my friends. And yes, my favorite color is pink!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="five">
+            <div class="container">
+                <img src="/images/ana.jpg" alt="Ana" class="image">
+                <div class="overlay">
+                    <div class="text">This is Ana Carolina and she is the most beautiful person that I have ever met!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="six">
+            <div class="container">
+                <img src="/images/ana_with_me.jpg" alt="Falling in love" class="image">
+                <div class="overlay">
+                    <div class="text">Thankfully we met each other and felt in love!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seven">
+            <div class="container">
+                <img src="/images/the_proposal.jpg" alt="The proposal" class="image">
+                <div class="overlay">
+                    <div class="text">After a few time together I felt that she was the love of my life. So I proposed her to be my wife and she said YES!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="eight">
+            <div class="container">
+                <img src="/images/married.jpg" alt="Married" class="image">
+                <div class="overlay">
+                    <div class="text">In September 27th 2019 we got married! That was the best day of my life!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nine">
+            <div class="container">
+                <img src="/images/eternal_family.jpg" alt="An eternal family" class="image">
+                <div class="overlay">
+                    <div class="text">Since then we are an eternal family! Can't wait for eternity!!!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
