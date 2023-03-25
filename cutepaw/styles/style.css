@@ -41,7 +41,48 @@ main {
     grid-template-rows: 150px 8fr;
 }
 
-.home-h1 {
+.questions {
+    grid-row: 2/8;
+    grid-column: 1/9;
+}
+
+.questions p {
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 135%;
+}
+
+.contactus_reference p {
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 135%;
+}
+
+.contactus_reference {
+    grid-row: 8/9;
+    grid-column: 1/9;
+}
+
+.contactus_reference {
+    display: flex;
+    align-items: center;
+    margin: 0 200px;
+    margin-bottom: 50px;
+}
+
+.contactus_reference-img, .contactus_reference-link {
+    margin: 0 15px;
+}
+
+.faq-money, .faq-benefits, .faq-differences {
+    display: flex;
+    align-items: center;
+    margin: 20px 50px;
+}
+
+.faq-money-answer, .faq-benefits-answer, .faq-differences-answer {
+    margin: 20px 50px;
+}
+
+.home-h1, .faq-h1 {
     grid-column: 1/9;
     grid-row: 1/2;
     margin: auto;
@@ -52,9 +93,14 @@ p {
     font-size: 200%;
 }
 
-.home-h1 h1 {
+.home-h1 h1, .faq-h1 h1 {
     font-family: "Fredoka One", Verdana, sans-serif;
     font-size: 40px;
+}
+
+h3, h4 {
+    font-family: "Fredoka One", Verdana, sans-serif;
+    font-size: 25px;
 }
 
 .mission-vision-values {
@@ -81,7 +127,6 @@ p {
     grid-column: 2/3;
     grid-row: 1/5;
 }
-
 
 .values {
     grid-column: 3/4;
@@ -136,6 +181,18 @@ main div {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
+}
+
+.faq-icons {
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+}
+
+.faq-to-contactus-img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
 }
 
 .phone_contacts {
